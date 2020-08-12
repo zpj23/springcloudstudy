@@ -1,0 +1,18 @@
+#   server:
+#   port: 因为会启动多个 product-data-service, 所以端口号由用户自动设置，推荐 8001,8002,8003
+ 
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/zpj23/springcloudstudy/
+          searchPaths:
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.11.96:8761/eureka/
