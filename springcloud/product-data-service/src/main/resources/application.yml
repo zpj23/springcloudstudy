@@ -10,4 +10,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://192.168.11.96:8761/eureka/
+      defaultZone: http://127.0.0.1:8761/eureka,http://127.0.0.1:8762/eureka
+    register-with-eureka: true
+    ####需要检索服务
+    fetch-registry: true

@@ -62,6 +62,15 @@ public class App
 	        new SpringApplicationBuilder(App.class).properties("server.port=" + port).run(args);
 	 
 	    }
+	    /**
+	     * 把resttemplate注册到spring中
+	     * 以服务别名调用的话，必须要在resttemplate加@LoadBalanced
+	     * 开启依赖ribbon本地负载均衡
+	     * @Title restTemplate
+	     * @return
+	     * @author zpj
+	     * @time 2020年8月19日 上午10:11:24
+	     */
 	    @Bean
 	    @LoadBalanced
 	    RestTemplate restTemplate() {

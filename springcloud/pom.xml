@@ -50,5 +50,6 @@
     <module>product-view-service-ribbon</module>
     <module>product-view-service-feign</module>
     <module>config-server</module>
+    <module>eureka-server</module>
   </modules>
 </project>
